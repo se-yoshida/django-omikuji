@@ -1,8 +1,10 @@
+{% load static %}   <!-- 静的ファイルを使えるための記述 -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <title>Djangoでおみくじアプリを作ろう</title>
+    <link href="{% static 'omikuji/css/style.css' %}" rel="stylesheet">     <!-- CSSの読み込み設定を追加 -->
 </head>
 <body>
     {% block content %}

@@ -1,8 +1,9 @@
 {% extends 'omikuji/base.html' %}
+{% load static %}   <!-- 静的ファイルを使えるための記述 -->
 
 {% block content %}
     <h1>Djangoで作るおみくじアプリ</h1>
     <p>今日の運勢を占います</p>
-    <div><img src="" alt="おみくじ"></div>
+    <div><img src="{% static 'omikuji/img/omikuji.png' %}" alt="おみくじ"></div>    <!-- イメージ画像のリンクを追加 -->
     <div><a href="{% url 'omikuji:result' %}">おみくじを引く</a></div>  <!-- result.htmlへの画面遷移を追加 -->
 {% endblock %}

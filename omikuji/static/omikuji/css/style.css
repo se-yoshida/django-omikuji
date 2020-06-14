@@ -1,0 +1,38 @@
+/*背景色を設定*/
+body {
+   background-color: #00FFCC;
+}
+
+/*h1の表示を大きくして中央に白文字*/
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #FFFFFF;
+}
+
+/*pの表示をちょっと大きくして中央に白文字*/
+p {
+    text-align: center;
+    font-size: 2em;
+    color: #FFFFFF;
+}
+
+/*リンクをボタン風に修正*/
+a {
+    display: inline-block;
+    padding: 0.3em 1em;
+    font-size: 2em;
+    color: #FFFFFF;
+    border: solid 2px #FFFFFF;
+    text-decoration: none;
+}
+
+/*リンクを中央配置にするための設定*/
+div {
+    text-align: center;
+}
+
+/*運勢の表示を大きく*/
+strong {
+    font-size: 3em;
+}
