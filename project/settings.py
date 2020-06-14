@@ -25,8 +25,8 @@ SECRET_KEY = 'k1h)@(7fi*908!_)7!74_m1w+8#59in+1&ccu=!e-u9i(2i7f2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']   # 全てのドメインからの接続を許可
 
 # Application definition
 
@@ -103,9 +103,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ja'    # 言語コードを日本語に設定
 
-TIME_ZONE = 'UTC'
+# TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tokyo'    # タイムゾーンを日本語に設定
 
 USE_I18N = True
 
@@ -118,3 +120,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')  # 静的ファイルの設定を最終行に追加
