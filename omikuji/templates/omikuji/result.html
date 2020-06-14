@@ -2,6 +2,6 @@
 
 {% block content %}
     <h1>今日の運勢は</h1>
-    <p><strong>大吉</strong></p>
+    <p><strong>{{ omikuji }}</strong></p>
     <div><a href="{% url 'omikuji:index' %}">トップページに戻る</a></div>   <!-- index.htmlへの画面遷移を追加 -->
 {% endblock %}
