@@ -4,5 +4,5 @@
     <h1>Djangoで作るおみくじアプリ</h1>
     <p>今日の運勢を占います</p>
     <div><img src="" alt="おみくじ"></div>
-    <div><a href="">おみくじを引く</a></div>
+    <div><a href="{% url 'omikuji:result' %}">おみくじを引く</a></div>  <!-- result.htmlへの画面遷移を追加 -->
 {% endblock %}
